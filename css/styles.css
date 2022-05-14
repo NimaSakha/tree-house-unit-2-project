@@ -113,9 +113,10 @@ h1 a, .top-nav a{
         width: 480px;
     }
     .pfp{
-        float: right;
+        float: left;
     }
     .text-me{
+        float: right;
         width: 500px;
         margin-left: 0;
         float: left;
@@ -123,7 +124,9 @@ h1 a, .top-nav a{
         
     }
     
+    header{
 
+    }
 }
 @media (min-width: 1024px){
     nav{
