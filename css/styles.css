@@ -14,6 +14,18 @@ a{
 }
 p{
     font-family: "roboto";
+    text-align: center;
+    align-self: center;
+}
+h2{
+    margin-top: 100px;
+    text-align: center;
+    font-family: "roboto";
+
+}
+h3{
+    text-align: center;
+    font-family: "roboto";
 }
 nav{
     font-family: "roboto";
@@ -44,8 +56,21 @@ h1 a, .top-nav a{
 .top-nav a{
     text-transform: capitalize;
 }
-.profile-text{
+.pfp{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+.text,
+.text-me{
     margin: 20px 20px;
+}
+.picture{
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 @media (min-width: 768px){
     .top-nav{
@@ -57,7 +82,48 @@ h1 a, .top-nav a{
         width: auto;
         margin-right: 15px;
         background-color: transparent;
+
     }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-flow: wrap;
+        
+    }
+    .me{
+        float: left;
+        
+    }
+    .port{
+        margin-bottom: 50px;
+        padding: 0;
+        width: 50%;
+    }
+    .header{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        clear: right;
+    }
+    .me, p{
+        clear: right;
+    }
+    .picture{
+        width: 480px;
+    }
+    .pfp{
+        float: right;
+    }
+    .text-me{
+        width: 500px;
+        margin-left: 0;
+        float: left;
+        clear: right;
+        
+    }
+    
+
 }
 @media (min-width: 1024px){
     nav{
@@ -72,4 +138,5 @@ h1 a, .top-nav a{
         width: initial;
         margin-bottom: 0;   
     }
+
 }
