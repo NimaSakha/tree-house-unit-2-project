@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+
 }
 body{
     margin: 0 auto;
@@ -16,6 +17,7 @@ p{
     font-family: "roboto";
     text-align: center;
     align-self: center;
+    clear: right;
 }
 h2{
     margin-top: 100px;
@@ -63,7 +65,7 @@ h1 a, .top-nav a{
     width: 200px;
 }
 .text,
-.text-me{
+.info{
     margin: 20px 20px;
 }
 .picture{
@@ -82,51 +84,40 @@ h1 a, .top-nav a{
         width: auto;
         margin-right: 15px;
         background-color: transparent;
-
     }
+    
     .container{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         flex-flow: wrap;
-        
-    }
-    .me{
-        float: left;
+        justify-content: space-between;
         
     }
     .port{
-        margin-bottom: 50px;
-        padding: 0;
         width: 50%;
     }
     .header{
         justify-content: center;
         align-items: center;
-        margin: auto;
-        clear: right;
-    }
-    .me, p{
-        clear: right;
+        width: 100%;
     }
     .picture{
-        width: 480px;
+        width: 380px;
     }
     .pfp{
-        float: left;
-    }
-    .text-me{
+        clear: left;
         float: right;
-        width: 500px;
-        margin-left: 0;
-        float: left;
-        clear: right;
         
     }
-    
-    header{
+    .info{
+        margin: 0;
+        width: 500px;
+        clear: right;
 
     }
+
+
+
 }
 @media (min-width: 1024px){
     nav{
