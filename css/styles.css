@@ -74,6 +74,10 @@ h1 a, .top-nav a{
     margin-left: auto;
     margin-right: auto;
 }
+.container-port{
+    display: flex;
+    flex-direction: column;
+}
 @media (min-width: 768px){
     .top-nav{
         margin-top: 0;
@@ -86,34 +90,34 @@ h1 a, .top-nav a{
         background-color: transparent;
     }
     
-    .container{
+    .container-port{
         display: flex;
         flex-direction: row;
         flex-flow: wrap;
         justify-content: space-between;
         
     }
+    .header{
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: stretch;
+    }
     .port{
         width: 50%;
     }
     .header{
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+        display: flex;
+        
     }
     .picture{
         width: 380px;
     }
-    .pfp{
-        clear: left;
-        float: right;
-        
-    }
-    .info{
-        margin: 0;
-        width: 500px;
-        clear: right;
 
+    .info{
+        width: 50%;
+    }
+    .pfp{
+        margin: 10px;
     }
 
 
