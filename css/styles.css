@@ -77,6 +77,48 @@ h1 a, .top-nav a{
     display: flex;
     flex-direction: column;
 }
+.container{
+    display: flex;
+    flex-direction: column
+
+}
+a{
+    color: black;
+    font-weight: bold;
+    margin: auto;
+    margin-left: 10px;
+}
+.footer{
+    margin: 0;
+   display: flex;
+   flex-direction: row;
+}
+.tab{
+    display: none;
+}
+.phone{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.email{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.lable{
+    margin: auto;
+    margin-right: 10px;
+}
+.top{
+    margin: 10px 10px 10px auto;
+}
+.contact{
+    margin-top: 30px;
+}
+.ctext{
+    margin: 10px;
+}
 @media (min-width: 768px){
     .top-nav{
         margin-top: 0;
@@ -128,8 +170,12 @@ h1 a, .top-nav a{
         margin-bottom: 20px;
     }
 
-
-
+    .tab{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 @media (min-width: 1024px){
     nav{
@@ -143,6 +189,9 @@ h1 a, .top-nav a{
     .top-nav li{
         width: initial;
         margin-bottom: 0;   
+    }
+    .port{
+        width: 30%;
     }
 
 }
