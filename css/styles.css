@@ -1,236 +1,290 @@
-*{
+* {
     box-sizing: border-box;
 
 }
-html{
+
+html {
     background-color: rgb(237 237 237);
 }
-body{
+
+body {
     margin: 0 auto;
     max-width: 1024px;
 }
-ul{
+
+ul {
     list-style: none;
     padding-left: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
-p{
+
+p {
     font-family: "roboto";
     text-align: center;
     align-self: center;
 }
-h2{
+
+h2 {
     margin-top: 100px;
     text-align: center;
     font-family: "roboto";
 
 }
-h3{
+
+h3 {
     text-align: center;
     font-family: "roboto";
 }
-nav{
+
+nav {
     font-family: "roboto";
     font-weight: 400;
     letter-spacing: .05rem;
     padding: 25px;
 
 }
-h1, .top-nav{
+
+h1,
+.top-nav {
     text-align: center;
 }
-.top-nav, .top-nav li{
+
+.top-nav,
+.top-nav li {
     width: 100%;
 }
-h1 a, .top-nav a{
+
+h1 a,
+.top-nav a {
     color: #000;
 }
 
-.top-nav{
+.top-nav {
     margin-top: 30px;
-    
+
 }
-.top-nav li{
-    padding: 10px 0 ;
+
+.top-nav li {
+    padding: 10px 0;
     margin: 5px auto;
 }
-.top-nav a{
+
+.top-nav a {
     text-transform: capitalize;
 }
-.pfp{
+
+.pfp {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 200px;
 }
+
 .text,
-.info{
+.info {
     margin: 20px 20px;
 }
-.text{
+
+.text {
     font-family: poppins, 'Times New Roman', Times, serif;
 }
-.picture{
+
+.picture {
     display: block;
     width: 250px;
     margin-left: auto;
     margin-right: auto;
 }
-.container-port{
+
+.container-port {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-a{
+
+a {
     color: black;
     font-weight: bold;
     margin: auto;
     margin-left: 10px;
 }
-.footer{
+
+.footer {
     margin: 0;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-family: "poppins", 'Times New Roman';
 }
-.tab{
+
+.tab {
     display: none;
 }
-.phone{
+
+.phone {
     margin: 10px;
     display: flex;
     flex-direction: row;
 }
-.email{
+
+.email {
     margin: 10px;
     display: flex;
     flex-direction: row;
 }
-.lable{
+
+.lable {
     margin: auto;
     margin-right: 10px;
 }
-.top{
+
+.top {
     margin: 10px 10px 10px auto;
 }
-.contact{
+
+.contact {
     margin-top: 30px;
 }
-.ctext{
+
+.ctext {
     margin: 10px;
 }
-.fName{
+
+.fName {
     margin: 10px;
     font-weight: normal;
     font-size: 19px;
     font-family: "roboto";
 }
 
-@media (min-width: 768px){
-    .top-nav{
+.footT {
+    margin: auto;
+    text-align: center;
+    align-self: center;
+}
+
+@media (min-width: 768px) {
+    .top-nav {
         margin-top: 0;
 
     }
-    .top-nav li{
+
+    .top-nav li {
         display: inline-block;
         width: auto;
         margin-right: 15px;
         background-color: transparent;
     }
-    
-    .container-port{
+
+    .container-port {
         display: flex;
         flex-direction: row;
         flex-flow: wrap;
         justify-content: space-between;
-        
+
     }
-    .header{
+
+    .header {
         flex-direction: row;
         flex-wrap: wrap;
         flex-basis: stretch;
     }
-    .port{
+
+    .port {
         width: 50%;
     }
-    .header{
+
+    .header {
         display: flex;
         flex-direction: row-reverse;
 
     }
-    .picture{
+
+    .picture {
         width: 90%;
         margin: 15px;
     }
 
-    .info{
+    .info {
         width: 50%;
         margin-right: 20px;
         text-align: left;
     }
-    .pfp{
+
+    .pfp {
         width: 250px;
         margin: 10px;
     }
-    .heading{
+
+    .heading {
         margin: auto;
         margin-bottom: 20px;
     }
 
-    .tab{
+    .tab {
         margin: 20px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .header{
+
+    .header {
         justify-content: left;
 
     }
-    .pfp{
+
+    .pfp {
         margin: 10px 10px 10px auto;
     }
-    .top{
+
+    .top {
         display: none;
     }
-    .fNav{
+
+    .fNav {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         margin-right: 20px;
         margin-left: auto;
     }
- 
+
 }
-@media (min-width: 1024px){
-    nav{
+
+@media (min-width: 1024px) {
+    nav {
         display: flex;
         position: sticky;
         top: 0;
         justify-content: space-between;
         align-items: flex-start;
     }
+
     .top-nav,
-    .top-nav li{
+    .top-nav li {
         width: initial;
-        margin-bottom: 0;   
+        margin-bottom: 0;
     }
-    .port{
+
+    .port {
         width: 33%;
         transition: 1s;
     }
-    .port:hover{
+
+    .port:hover {
         transform: scale(1.2);
     }
-    a{
+
+    a {
         transition: 0.5s;
     }
-    a:hover{
+
+    a:hover {
         transform: scale(1.2);
     }
-    
+
 
 }
